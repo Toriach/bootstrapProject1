@@ -1,109 +1,191 @@
----
-layout: page
-title: Bootstrap 4 Github Pages
----
+<!DOCTYPE html>
+<html lang="pl">
 
-A [Bootstrap 4](https://getbootstrap.com/) start up project for [Github Pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/).
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+              crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+              crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+        <link rel="stylesheet" href="css/style.css">
+        <title>CV</title>
 
-* A full Bootstrap 4 theme usable both on Github Pages and with a standalone Jekyll.
-* Recompiles Bootstrap from SCSS files, which allows to customize Bootstrap's variables and use Bootstrap themes.
-* Full support of Bootstrap's JavaScript plugins.
-* Supports all features of Github Pages and Jekyll.
+        <!--todo me in separate file !!-->
 
-## Setup Guide
+    </head>
 
-### Create a repository from this template
+    <body>
+        <div class="container">
+            <header id="main-header">
+                <div class="accordion bg-dark" id="accordionExample" >
+                    <div class="row no-gutters">
 
-[Go to this repository page on Github](https://github.com/nicolas-van/bootstrap-4-github-pages) and click the `Use this template` button on the top right of the page.
+                        <div class="col-lg-4 col-md-5">
+                            <img src="img/person1.jpg" alt="NoFaceFound">
+                        </div>
+                        <div class="col-lg-8 col-md-7">
+                            <div class="row no-gutters emptyRow50PX"><!-- empty row as margin :) --> </div>
 
-### Choose a name for your repository
+                            <div class=" row no-gutters myCustomRow"> <!-- row with name and icons -->
+                                <div class="col-md-1"></div> <!-- empty column as margin :) -->
 
-Here we have two possibilities:
+                                <div class="col-md-3">
+                                    <h1 class="h1-name">John Doe</h1>
+                                </div>
+                                <div class="col-md-2">
+                                    <a href="https://twitter.com/?lang=pl" target="_blank"><i class="fab fa-twitter socialMediaIcons"></i></a>                                    
+                                </div>
+                                <div class="col-md-2">
+                                    <a href="https://www.facebook.com/tomek.sowinski.1" target="_blank"><i class="fab fa-facebook socialMediaIcons"></i></a>                                   
+                                </div>
+                                <div class="col-md-2">
+                                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram socialMediaIcons"></i></a>                                 
+                                </div>
+                                <div class="col-md-2">
+                                    <a href="https://github.com/Toriach/websiteProjects" target="_blank"><i class="fab fa-github socialMediaIcons"></i></a>                                    
+                                </div>
+                            </div>
 
-* **You want a user or organization website**
+                            <div class="row no-gutters emptyRow50PX"><!-- empty row as margin --> </div>
 
-  In this case your website's URL will be `http://<your username>.github.io` where `<your username>` is your Github user name.
+                            <div class="row no-gutters jobTitleBar"><!-- job title description --> 
+                                <p class="jobTitleParagraph">Experienced Full Stack Web Developer</p>
+                            </div>
 
-  Choose the repository name `<your username>.github.io`.
+                            <div class="row no-gutters testRow">
+                                <div class="col-md-3">
+                                    <button class="btn bg-primary btn-lg btn-block mainMenuButtonsWithIcons" type="button" data-toggle="collapse" data-target="#homeHidenSection" aria-expanded="true" aria-controls="homeHidenSection">
+                                        <i class="fas fa-home fa-2x d-block"></i>Home</button>
+                                </div>
 
-* **You want a project website**
+                                <div class="col-md-3">
+                                    <button class="btn bg-success btn-lg btn-block mainMenuButtonsWithIcons" type="button" data-toggle="collapse" data-target="#ResumeHidenSection" aria-expanded="true" aria-controls="ResumeHidenSection">
+                                        <i class="fas fa-graduation-cap fa-2x d-block"></i>Resume</button>
+                                </div>
 
-  In this case your website's URL will be `http://<your username>.github.io/<whatever you want>` where `<whatever you want>` can be any valid name for a Github repository.
+                                <div class="col-md-3">
+                                    <button class="btn bg-warning btn-lg btn-block mainMenuButtonsWithIcons" type="button" data-toggle="collapse" data-target="#WorkHidenSection" aria-expanded="true" aria-controls="WorkHidenSection">
+                                        <i class="fas fa-folder-open fa-2x d-block"></i>Work</button>
+                                </div>
 
-  Choose the repository name `<whatever you want>`.
+                                <div class="col-md-3">
+                                    <button class="btn bg-danger btn-lg btn-block mainMenuButtonsWithIcons" type="button" data-toggle="collapse" data-target="#ContactHidenSection" aria-expanded="true" aria-controls="ContactHidenSection">
+                                        <i class="fas fa-envelope fa-2x d-block"></i>Contact</button>
+                                </div>
 
-### Activate Github Pages on your repository
+                            </div>
+                        </div>
+                    </div> <!-- end of upper row -->
 
-Go in the `Settings` page of your repository, in the `Github Pages`, under the `Source` parameter, choose `master branch` then `Save`.
+                    <!-- hiden rows -->
+                    <!-- Home -->
+                    <div class="row no-gutters">
+                        <div class="col-md-12 collapse homeHidenSection bg-primary " id="homeHidenSection" aria-labelledby="homeHidenSection" data-parent="#accordionExample">  
+                            <div class="row ">
+                                <div class="col-md-12 ">
+                                    <div class="card bg-primary">
+                                        <div class="card-body ">
+                                            <h2>Welcome to My Page</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-md-12 ">
+                                    <div class="card bg-light">
+                                        <div class="card-body">
+                                            <h3>My Skills</h3>
+                                            <p style="color: black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                            <hr>
+                                            <h4>HTML 5</h4>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <h4>CSS 3</h4>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <h4>JavaScript</h4>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <h4>PHP</h4>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <h4>Python</h4>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <br>
 
-### That's it
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-Your Github Pages website with customizable Bootstrap 4 is now up and running, you can access it using the URL displayed by Github in the `Github Pages` settings.
+                    <!-- Resume -->
+                    <div class="row no-gutters">
+                        <div class="col-md-12 collapse  bg-success" id="ResumeHidenSection" aria-labelledby="WorkHidenSection" data-parent="#accordionExample">                         
+                            <div class="html-rainbow-text" style="text-align: center;">
+                                <span style="color:#9400D3">TODO</span><br><span style="color:#0000FF">this</span><br><span style="color:#FFFF00">page</span><br><span style="color:#FF0000">:)</span>
+                            </div>
+                        </div>
+                    </div>
 
-## Customization Guide
+                    <!-- Work -->
+                    <div class="row no-gutters">
+                        <div class="col-md-12  collapse close  bg-warning" id="WorkHidenSection"  aria-labelledby="WorkHidenSection" data-parent="#accordionExample">                         
+                            <div class="html-rainbow-text" style="text-align: center;">
+                                <span style="color:#9400D3">TODO</span><br><span style="color:#0000FF">this</span><br><span style="color:#FFFF00">page</span><br><span style="color:#FF0000">:)</span>
+                            </div>
+                        </div>
+                    </div>
 
-### Modify the configuration
+                    <!-- Contact -->
+                    <div class="row no-gutters">
+                        <div class="col-md-12 collapse close  bg-danger" id="ContactHidenSection" aria-labelledby="ContactHidenSection" data-parent="#accordionExample">                       <div class="html-rainbow-text" style="text-align: center;">
+                            <span style="color:#9400D3">TODO</span><br><span style="color:#0000FF">this</span><br><span style="color:#FFFF00">page</span><br><span style="color:#FF0000">:)</span>
+                            </div>
+                        </div>
+                    </div>
 
-You should at least edit the `_config.yml` file to edit your website's metadata, like the title, description and repository URL.
+                    <div class="row"><!-- download Resume Row -->
 
-### Change your theme
+                        <div class="col-md-4 downloadResumeRow">
+                            <button class="btn btn-outline-light downloadResumeButton"><i class="fas fa-cloud"></i> Download Resume</button>
+                        </div>
 
-This website uses the [Minty](https://bootswatch.com/minty/) Bootstrap theme by default. And you don't want to use the same theme everyone else uses do you?
 
-You can of course modify anything in the `_includes`, `_layouts` and `_sass` folders to customize both the HTML or CSS of your website, possibly referring to the [Bootstrap documentation](https://getbootstrap.com/) or the [Jekyll documentation](https://jekyllrb.com/) when needed. This is a normal part of web development and it is outside the scope of this guide.
 
-But if you don't know where to start I can recommend you to import a theme from [Bootswatch](https://bootswatch.com/).
+                    </div>
+                </div>
 
-* Go on [Bootswatch](https://bootswatch.com/) and choose a theme that you like.
-* Using the top bar, download its `_variables.scss` and `_bootswatch.scss` files.
-* Copy the content of `_variables.scss` in `_sass/_variables.scss`.
-* Copy the content of `_bootswatch.scss` in `_sass/_bootstrap_customization.scss`.
 
-That's it, you now have a totally different appearance for you website.
+            </header>
+        </div>
 
-### Modify the content
 
-You probably don't want the present guide to be the front page of your website, so you should edit the `index.md` file. You probably also want to edit or delete the `CONTRIBUTING.md`, `README.md` and `LICENSE.md` files.
 
-Aside from that you can of course create new pages and posts like with any Jekyll website by refering to the [Jekyll documentation](https://jekyllrb.com/).
 
-### Run Jekyll on your computer to speed up testing
 
-Editing your website's content or theme directly on Github is completely possible but, due to the time Github Pages takes to update your website, it will probably be much more effective to work using a local Jekyll installation.
 
-To do so:
 
-* Install the [requirements for Jekyll](https://jekyllrb.com/docs/installation/).
-* Type `bundle install` at the root of your project to install the necessary Ruby dependencies.
-* Type `bundle exec jekyll serve` to launch the test Jekyll web server that will re-compile your work if you edit it.
-* You can then open `http://localhost:4000` in your web browser to see your work-in-progress website.
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 
-Please note that, to ensure maximum compatibility with Github Pages, the `Gemfile` of this project references the `github-pages` gem, not Jekyll directly. This implies some differences in behavior compared to the official documentation of Jekyll.
 
-## Known issues
+    </body>
 
-* Bootstrap 4 should normally be post-processed using [Autoprefixer](https://github.com/postcss/autoprefixer). Even if it is possible to use autoprefixer with Jekyll, it is not possible with a classic Github Pages installation without adding some kind of pre-processing before publication. Since this project mostly aims compatibility with Github Pages I prefer to keep it that way. The consequences of this choice is that some Bootstrap features could not work as expected on older browsers.
-
-## How to contribute
-
-Like this project ? [Consider adding a star on Github](https://github.com/nicolas-van/bootstrap-4-github-pages).
-
-[You can also see the contribution guide](https://github.com/nicolas-van/bootstrap-4-github-pages/blob/master/CONTRIBUTING.md).
-
-## Websites using Bootstrap 4 Github Pages
-
-* [My personal blog](https://nicolas-van.github.io/)
-* [the wavelet's profile](https://thewavelet.github.io/)
-* [roseblood.github.io](https://roseleblood.github.io/)
-* [colemannick.github.io](https://colemannick.github.io/)
-* [Betty and the Blushtones](http://bettyandtheblushtones.co.uk/)
-* [borislouis.github.io](https://borislouis.github.io/)
-* [dariusnwadike.github.io](https://dariusnwadike.github.io/)
-
-## Other Github Pages related projects
-
-I'm a fan of Github Pages for the possibilities it offers to anyone to publish a website for free. I have multiple projects that could be of interest if that's your case too:
-
-* [Easy Markdown to Github Pages](https://nicolas-van.github.io/easy-markdown-to-github-pages/)
-* [Parcel Github Pages Boilerplate](https://github.com/nicolas-van/parcel-github-pages-boilerplate)
-
+</html>
