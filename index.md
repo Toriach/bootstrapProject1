@@ -10,10 +10,8 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
               crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://github.com/Toriach/bootstrapProject1/blob/master/css/style.css">
         <title>CV</title>
-
-        <!--todo me in separate file !!-->
 
     </head>
 
